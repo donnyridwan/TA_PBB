@@ -12,13 +12,13 @@ function Detail() {
     useEffect(() => {
         const getProduct = async () => {
             setLoading(true);
-            const response = await fetch(`https://fakestoreapi.com/products/1`);
+            const response = await fetch(`https://fakestoreapi.com/products/`+id);
             const data = await response.json();
             setProduct(data);
             setLoading(false);
         }
         getProduct();
-    }, [1]);
+    }, [id]);
 
     const ShowDetails = () => {
         return (

@@ -4,10 +4,12 @@ import Product from './pages/Product';
 import User from './pages/User';
 import Search from './pages/Search';
 import Detail from './pages/detail';
+import Info from './pages/Info';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import { HiHome } from 'react-icons/hi'
 import { MdGroup } from 'react-icons/md'
 import { HiFilter } from 'react-icons/hi'
+import {AiFillInfoCircle} from 'react-icons/ai';
 
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
               <Route path="/Product" element={<Product />} />
               <Route path="/search" element={<Search />} />
               <Route path="/User" element={<User />} />
-              <Route path="/Detail" element={<Detail />} />
+              <Route path="/Info" element={<Info />} />
+              <Route path="/Detail/:id" element={<Detail />} />
           </Routes>
           <footer>
           <Col>
@@ -42,9 +45,9 @@ function App() {
               </NavLink>
           </Col>
           <Col>
-          <NavLink to="/Detail" className="iconWrapper">
-              <MdGroup className="icon" />
-              Detail
+          <NavLink to="/Info" className="iconWrapper">
+              <AiFillInfoCircle className="icon" />
+              Info
               </NavLink>
           </Col>
           </footer>

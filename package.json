@@ -1,5 +1,8 @@
 {
   "name": "tusag_akhir",
+  "description": "Olshop Gajelas",
+  "author": "Donny",
+  "license": "UNLICENSED",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
