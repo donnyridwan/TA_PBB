@@ -1,0 +1,6 @@
+.box{
+    position: absolute;
+    margin-left: -50px;
+    left: 50%;
+    text-align: center;
+}

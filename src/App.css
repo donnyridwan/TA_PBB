@@ -1,0 +1,35 @@
+
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: Verdana;
+  padding: 5px 0;
+  font-size: 12px;
+}
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #009EFF;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center; 
+  border-width: 5px;
+  border-top: black;
+}
+
+.icon {
+  color: black;
+  margin-bottom: 4px;
+  font-size: 22px;
+}
+
+.active {
+  color:black;
+}
+
