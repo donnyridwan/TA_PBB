@@ -3,6 +3,7 @@ import './App.css';
 import Product from './pages/Product';
 import User from './pages/User';
 import Search from './pages/Search';
+import Detail from './pages/detail';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import { HiHome } from 'react-icons/hi'
 import { MdGroup } from 'react-icons/md'
@@ -19,6 +20,7 @@ function App() {
               <Route path="/Product" element={<Product />} />
               <Route path="/search" element={<Search />} />
               <Route path="/User" element={<User />} />
+              <Route path="/Detail" element={<Detail />} />
           </Routes>
           <footer>
           <Col>
@@ -37,6 +39,12 @@ function App() {
           <NavLink to="/User" className="iconWrapper">
               <MdGroup className="icon" />
               Profile
+              </NavLink>
+          </Col>
+          <Col>
+          <NavLink to="/Detail" className="iconWrapper">
+              <MdGroup className="icon" />
+              Detail
               </NavLink>
           </Col>
           </footer>

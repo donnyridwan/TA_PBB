@@ -17,7 +17,7 @@ const Product = () => {
     );
         return(
             <Container >
-            <h1 className="headline">Fashion Olshop</h1>
+            <h1 className="headline">Fashion Olshop Gajelas</h1>
                 <Row md={6} className="p-5" >
                     {Products.map((product) => {
                         return(
